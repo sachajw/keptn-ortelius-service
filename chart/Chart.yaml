@@ -1,6 +1,6 @@
 apiVersion: v2
-name: keptn-service-template-go
-description: Helm Chart for the keptn keptn-service-template-go
+name: keptn-ortelius-service
+description: Helm Chart for the keptn-ortelius-service
 
 # A chart can be either an 'application' or a 'library' chart.
 #

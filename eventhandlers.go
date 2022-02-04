@@ -113,9 +113,9 @@ func HandleGetSliTriggeredEvent(myKeptn *keptnv2.Keptn, incomingEvent cloudevent
 	testRunID := labels["testRunId"]
 
 	// Step 5 - get SLI Config File
-	// Get SLI File from keptn-service-template-go subdirectory of the config repo - to add the file use:
-	//   keptn add-resource --project=PROJECT --stage=STAGE --service=SERVICE --resource=my-sli-config.yaml  --resourceUri=keptn-service-template-go/sli.yaml
-	sliFile := "keptn-service-template-go/sli.yaml"
+	// Get SLI File from keptn-ortelius-service subdirectory of the config repo - to add the file use:
+	//   keptn add-resource --project=PROJECT --stage=STAGE --service=SERVICE --resource=my-sli-config.yaml  --resourceUri=keptn-ortelius-service/sli.yaml
+	sliFile := "keptn-ortelius-service/sli.yaml"
 	sliConfigFileContent, err := myKeptn.GetKeptnResource(sliFile)
 
 	// FYI you do not need to "fail" if sli.yaml is missing, you can also assume smart defaults like we do

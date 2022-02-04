@@ -4,22 +4,7 @@ This is a Keptn Service Template written in GoLang.
 
 Quick start:
 
-1. Replace every occurrence of (docker) image names and tags from `bradmccoydev/keptn-ortelius-service` to your docker organization and image name (e.g., `yourorganization/simple-service`)
-1. Replace every occurrence of `keptn-service-template-go` with the name of your service (e.g., `simple-service`)
-1. Optional (but recommended): Create a git repo (e.g., on `github.com/your-username/simple-service`)
-1. Adapt the [go.mod](go.mod) file and change `example.com/` to the actual package name (e.g., `github.com/your-username/simple-service`)
-1. Add yourself to the [CODEOWNERS](CODEOWNERS) file
-1. Initialize a git repository (you can skip this step if you have created your service by clicking on the `Use this template` button): 
-  * `git init .`
-  * `git add .`
-  * `git commit -m "Initial Commit"`
-1. Optional: Push your code an upstream git repo (e.g., GitHub) and adapt all links that contain `github.com` (e.g., to `github.com/your-username/simple-service`)
-1. Figure out whether your Kubernetes Deployment requires [any RBAC rules or a different service-account](https://github.com/keptn-sandbox/contributing#rbac-guidelines), and adapt [deploy/service.yaml](deploy/service.yaml) accordingly (initial setup is `serviceAccountName: keptn-default`).
-1. Last but not least: Remove this intro within the README file and make sure the README file properly states what this repository is about
-
----
-
-# keptn-service-template-go
+# keptn-ortelius-service
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/keptn-sandbox/keptn-service-template-go)
 [![Go Report Card](https://goreportcard.com/badge/github.com/keptn-sandbox/keptn-service-template-go)](https://goreportcard.com/report/github.com/keptn-sandbox/keptn-service-template-go)
 

@@ -14,7 +14,7 @@ deploy:
     flags:
       upgrade: ["--reuse-values", "--install"]
     releases:
-      - name: keptn-service-template-go
+      - name: keptn-ortelius-service
         namespace: keptn
         artifactOverrides:
           image: bradmccoydev/keptn-ortelius-service
