@@ -79,7 +79,7 @@ func HandleReleaseTriggeredEvent(myKeptn *keptnv2.Keptn, incomingEvent cloudeven
 	return nil
 }
 
-// HandleGetSliTriggeredEvent handles get-sli.triggered events if SLIProvider == keptn-service-template-go
+// HandleGetSliTriggeredEvent handles get-sli.triggered events if SLIProvider == keptn-ortelius-service
 // This function acts as an example showing how to handle get-sli events by sending .started and .finished events
 // TODO: adapt handler code to your needs
 func HandleGetSliTriggeredEvent(myKeptn *keptnv2.Keptn, incomingEvent cloudevents.Event, data *keptnv2.GetSLITriggeredEventData) error {
@@ -87,7 +87,7 @@ func HandleGetSliTriggeredEvent(myKeptn *keptnv2.Keptn, incomingEvent cloudevent
 
 	// Step 1 - Do we need to do something?
 	// Lets make sure we are only processing an event that really belongs to our SLI Provider
-	if data.GetSLI.SLIProvider != "keptn-service-template-go" {
+	if data.GetSLI.SLIProvider != "keptn-ortelius-service" {
 		log.Printf("Not handling get-sli event as it is meant for %s", data.GetSLI.SLIProvider)
 		return nil
 	}

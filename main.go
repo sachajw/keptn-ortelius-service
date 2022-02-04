@@ -28,7 +28,7 @@ type envConfig struct {
 }
 
 // ServiceName specifies the current services name (e.g., used as source when sending CloudEvents)
-const ServiceName = "keptn-service-template-go"
+const ServiceName = "keptn-ortelius-service"
 
 /**
  * Parses a Keptn Cloud Event payload (data attribute)
