@@ -4,7 +4,7 @@ build:
   local:
     useBuildkit: true
   artifacts:
-    - image: ghcr.io/keptnsandbox/keptn-service-template-go # Todo: Replace this with your image name
+    - image: bradmccoydev/keptn-ortelius-service
       docker:
         dockerfile: Dockerfile
         buildArgs:
@@ -14,10 +14,10 @@ deploy:
     flags:
       upgrade: ["--reuse-values", "--install"]
     releases:
-      - name: keptn-service-template-go
+      - name: keptn-ortelius-service
         namespace: keptn
         artifactOverrides:
-          image: ghcr.io/keptnsandbox/keptn-service-template-go # Todo: Replace this with your image name
+          image: bradmccoydev/keptn-ortelius-service
         imageStrategy:
           helm: { }
         overrides:

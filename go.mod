@@ -1,4 +1,4 @@
-module example.com/keptn-service-template-go
+module ortelius/keptn-ortelius-service
 
 go 1.16
 
