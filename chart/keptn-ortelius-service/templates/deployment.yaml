@@ -106,7 +106,6 @@ spec:
             - name: HTTP_SSL_VERIFY
               value: "{{ .Values.remoteControlPlane.api.apiValidateTls | default "true" }}"
             {{- end }}
-
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
