@@ -1,5 +1,3 @@
-listenevents: "sh.keptn.event.hello.triggered"
-
 image:
   repository: bradmccoydev/keptn-ortelius-service # Container Image Name
   pullPolicy: IfNotPresent                   # Kubernetes Image Pull Policy
@@ -11,7 +9,7 @@ distributor:
   stageFilter: ""                            # Sets the stage this helm service belongs to
   serviceFilter: ""                          # Sets the service this helm service belongs to
   projectFilter: ""                          # Sets the project this helm service belongs to
-  pubsubTopic: "sh.keptn.>"                  # Sets the events the service subscribes to
+  pubsubTopic: "sh.keptn.event.hello.triggered"                  # Sets the events the service subscribes to
   image:
     repository: docker.io/keptn/distributor  # Container Image Name
     pullPolicy: IfNotPresent                 # Kubernetes Image Pull Policy
