@@ -4,7 +4,6 @@ metadata:
   name: {{ include "keptn-service.fullname" . }}
   labels:
     {{- include "keptn-service.labels" . | nindent 4 }}
-
 spec:
   replicas: 1
   selector:
