@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   keptn-ortelius-service:
   - apiVersion: v2
+    appVersion: 0.12.1
+    created: "2022-04-14T10:22:20.593000038Z"
+    description: Helm Chart for the keptn ortelius service
+    digest: be300443be78b41c9bbb72f88f14bd3356868caf056c9b365b74365de6ea4226
+    name: keptn-ortelius-service
+    type: application
+    urls:
+    - https://github.com/ortelius/keptn-ortelius-service/releases/download/keptn-ortelius-service-0.12.1/keptn-ortelius-service-0.12.1.tgz
+    version: 0.12.1
+  - apiVersion: v2
     appVersion: 0.12.0
     created: "2022-02-08T10:32:16.300216821Z"
     description: Helm Chart for the keptn ortelius service
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://github.com/ortelius/keptn-ortelius-service/releases/download/keptn-ortelius-service-0.11.6/keptn-ortelius-service-0.11.6.tgz
     version: 0.11.6
-generated: "2022-02-08T10:32:16.300229721Z"
+generated: "2022-04-14T10:22:20.593022938Z"
